@@ -69,3 +69,53 @@ project_name, a new or already exists projects - if no projects.name found in th
 score, the score value for the correction
 Context: Write code in SQL is a nice level up!
 
+
+Task 7.
+Write a SQL script that creates a stored procedure ComputeAverageScoreForUser that computes and store the average score for a student. Note: An average score can be a decimal
+
+Requirements:
+
+Procedure ComputeAverageScoreForUser is taking 1 input:
+user_id, a users.id value (you can assume user_id is linked to an existing users)
+
+
+Task 8.
+Write a SQL script that creates an index idx_name_first on the table names and the first letter of name.
+
+Requirements:
+
+Import this table dump: names.sql.zip
+Only the first letter of name must be indexed
+Context: Index is not the solution for any performance issue, but well used, it’s really powerful!
+
+
+Task 9.
+Write a SQL script that creates an index idx_name_first_score on the table names and the first letter of name and the score.
+
+Requirements:
+
+Import this table dump: names.sql.zip
+Only the first letter of name AND score must be indexed
+
+
+Task 10.
+Write a SQL script that creates a function SafeDiv that divides (and returns) the first by the second number or returns 0 if the second number is equal to 0.
+
+Requirements:
+
+You must create a function
+The function SafeDiv takes 2 arguments:
+a, INT
+b, INT
+And returns a / b or 0 if b == 0
+
+
+Task 11.
+Write a SQL script that creates a view need_meeting that lists all students that have a score under 80 (strict) and no last_meeting or more than 1 month.
+
+Requirements:
+
+The view need_meeting should return all students name when:
+They score are under (strict) to 80
+AND no last_meeting date OR more than a month
+
