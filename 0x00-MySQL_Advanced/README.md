@@ -43,3 +43,29 @@ Column names must be: band_name and lifespan (in years until 2022 - please use 2
 You should use attributes formed and split for computing the lifespan
 Your script can be executed on any database
 
+
+Task 4.
+Write a SQL script that creates a trigger that decreases the quantity of an item after adding a new order.
+
+Quantity in the table items can be negative.
+
+Context: Updating multiple tables for one action from your application can generate issue: network disconnection, crash, etc… to keep your data in a good shape, let MySQL do it for you!
+
+
+Task 5.
+Write a SQL script that creates a trigger that resets the attribute valid_email only when the email has been changed.
+
+Context: Nothing related to MySQL, but perfect for user email validation - distribute the logic to the database itself!
+
+
+Task 6.
+Write a SQL script that creates a stored procedure AddBonus that adds a new correction for a student.
+
+Requirements:
+
+Procedure AddBonus is taking 3 inputs (in this order):
+user_id, a users.id value (you can assume user_id is linked to an existing users)
+project_name, a new or already exists projects - if no projects.name found in the table, you should create it
+score, the score value for the correction
+Context: Write code in SQL is a nice level up!
+
